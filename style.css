@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #1e3a8a, #2563eb);
+    color: white;
+}
+.app {
+    background: rgba(15, 23, 42, 0.9);
+    padding: 30px;
+    border-radius: 20px;
+    width: 380px;
+    text-align: center;
+    backdrop-filter: blur(10px);
+}
+
+.search {
+    margin: 20px 0;
+}
+
+input {
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    width: 60%;
+}
+
+button {
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    background: #00c6ff;
+    color: white;
+    cursor: pointer;
+}
+
+.weather {
+    margin-top: 20px;
+    display: none;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main img {
+    width: 70px;
+}
+
+#temp {
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.details {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.details div {
+    background: rgba(255,255,255,0.15);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.details span {
+    font-size: 12px;
+    opacity: 0.7;
+}
+
+#error {
+    margin-top: 10px;
+    color: red;
+}
